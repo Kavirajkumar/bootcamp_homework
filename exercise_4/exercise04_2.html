@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>Contact Us Form</title>
+    <style>
+        .required::after{
+            content: "*";
+            color:red;
+            font-size: 10px;
+        }
+        .inline{
+            display: inline-block;
+            
+        }
+        .inlinespan{
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Contact Us Extended</h1>
+    <form>
+        <div class="inline">
+            <label for="firstname" class="required">First Name</label>
+            <span class="inlinespan">
+                <input type="text" name="firstname" style="width: 294px";> 
+            </span>
+        </div>
+        <div class="inline">
+            <label for="lastname" class="required">Last Name</label> 
+            <span class="inlinespan">
+                <input type="text" name="lastname" style="width: 294px;"><br>
+            </span>
+        </div><br><br>
+        
+        <label for="email" class="required">Email</label><br>              
+        <input type="Email" name="email" style="width: 600px;"><br><br>
+        <label for="phone">Phone number</label><br>              
+        <input type="number" name="phone" style="width: 600px;"><br><br>
+        <label for="address">Address</label><br>  
+        <textarea name="address" style="width: 600px;height:80px"></textarea><br><br>           
+        <label for="city">City</label><br>              
+        <input type="text" name="city" style="width: 600px;"><br><br>
+        <label for="state">State/Province</label><br>              
+        <select name="states" id="state" style="width: 610px;">
+            <option value="none" selected disabled hidden></option>
+            <option value="MD">MD</option>
+            <option value="PA">PA</option>
+            <option value="NJ">NJ</option>
+            <option value="NY">NY</option>
+            <option value="RI">RI</option>
+            <option value="TX">TX</option>
+            <option value="NC">NC</option>
+            <option value="SC">SC</option>
+            <option value="MA">MA</option>
+            <option value="OH">OH</option>
+        </select><br><br>
+        <label for="country">Country</label><br>              
+        <select name="countries" id="country" style="width: 610px;">
+            <option value="none" selected disabled hidden></option>
+            <option value="India">India</option>
+            <option value="USA">USA</option>
+            <option value="China">China</option>
+            <option value="Canada">Canada</option>
+            <option value="Japan">Japan</option>
+            <option value="Russia">Russia</option>
+            <option value="Australia">Australia</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Germany">Germany</option>
+        </select><br><br>
+        <label for="zip">ZIP/Postal Code</label><br>              
+        <input type="number" name="zip" style="width: 600px;"><br><br>
+        <label for="comments">Comments and Questions</label><br>  
+        <textarea name="comments" style="width: 600px;height:100px"></textarea><br><br>
+        <input type="submit" value="Submit"
+    </form>

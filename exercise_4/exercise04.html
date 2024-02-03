@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>Terms and Conditions Form</title>
+    <style>
+        .required::after{
+            content: "*";
+            color:red;
+            font-size: 10px;
+        }
+        .inline{
+            display: inline-block;
+            
+        }
+        .inlinespan{
+            display: flex;
+        }
+        #divterms{
+            border-block: double;
+            border-block-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Terms and Conditions</h1>
+    <p>Please read our Terms and Conditions and sign below.</p>
+    <form>
+        <div class="inline">
+            <label for="firstname" class="required">First Name</label>
+            <span class="inlinespan">
+                <input type="text" name="firstname" style="width: 344px;"> 
+            </span>
+        </div>
+        <div class="inline">
+            <label for="lastname" class="required">Last Name</label> 
+            <span class="inlinespan">
+                <input type="text" name="lastname" style="width: 345px;"><br>
+            </span>
+        </div><br>
+        
+            <label for="email" class="required">Email</label><br>              
+            <input type="Email" name="email" style="width: 700px;"><br><br>
+            <label for="terms">Terms and Conditions</label> <br>    
+            <textarea name="Terms" style="width:700px; height:250px;background-color:rgb(240, 239, 239);border-color:skyblue;"> Last Updated:(add date)
+            
+ Please read there Terms and Conditions("Terms","Terms and Conditions") carefully before 
+ using the http://www.mywebsite.com (change this) website and the My Mobile App (change this) 
+ mobile application (the "service") operated by My Company (change this)("us", "we", or "our").
+ 
+ Your access to and use of the service is conditioned on your acceptance of and compliance 
+ with these Terms. These Terms apply to all visitors, users and others who access or use the 
+ Service.
+
+ By accessing or using the Service you agree to be bound by these Terma.If you disagree with 
+ any part of the terms then you may not access the Service.
+
+ Purchases
+ If you wish to purchase any product or service made available through the Service("Purchase"),
+            </textarea> <br> <br>
+            <label for="sign" class="required">Please sign here</label><br>
+            <textarea name="sign"  style="width:200px; height:100px;"></textarea><br>
+            <input type="submit" value="clear signature pad"><br><br>
+            <input type="submit" value="Submit">
+
+    </form>      
+</body>
